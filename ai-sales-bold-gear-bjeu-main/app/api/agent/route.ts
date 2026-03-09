@@ -3,6 +3,7 @@ import parseLLMJson from '@/lib/jsonParser'
 
 const LYZR_TASK_URL = 'https://agent-prod.studio.lyzr.ai/v3/inference/chat/task'
 const LYZR_API_KEY = process.env.LYZR_API_KEY || ''
+console.log("Loaded LYZR_API_KEY:", process.env.LYZR_API_KEY);
 
 // Types
 interface ArtifactFile {
