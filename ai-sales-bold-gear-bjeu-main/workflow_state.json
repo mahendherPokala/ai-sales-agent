@@ -1,0 +1,46 @@
+{
+  "project": "Pronix AI Sales Qualification & Outreach Platform",
+  "status": "agents_created",
+  "total_agents": 10,
+  "agent_ids": {
+    "sales_intelligence_manager": "69ae8a5e02d449101273a2d1",
+    "company_research_agent": "69ae8a43bd885a29b1d7d94d",
+    "icp_qualification_agent": "69ae8a440e02fcb17f72e903",
+    "opportunity_analysis_agent": "69ae8a4485d98e0bc2ef2eb5",
+    "decision_maker_agent": "69ae8a440e02fcb17f72e905",
+    "outreach_email_agent": "69ae8a9402d449101273a2d3",
+    "email_delivery_agent": "69ae8aaa27c3c93e13e20786",
+    "survey_analysis_agent": "69ae8a95fee5a76ed56614b9",
+    "follow_up_agent": "69ae8a9501d1193bde72d0ef",
+    "follow_up_delivery_agent": "69ae8aab27c3c93e13e20788"
+  },
+  "manager_agent": {
+    "agent_id": "69ae8a5e02d449101273a2d1",
+    "name": "Sales Intelligence Manager",
+    "managed_sub_agents": [
+      {"agent_id": "69ae8a43bd885a29b1d7d94d", "name": "Company Research Agent"},
+      {"agent_id": "69ae8a440e02fcb17f72e903", "name": "ICP Qualification Agent"},
+      {"agent_id": "69ae8a4485d98e0bc2ef2eb5", "name": "Opportunity Analysis Agent"},
+      {"agent_id": "69ae8a440e02fcb17f72e905", "name": "Decision Maker Discovery Agent"}
+    ]
+  },
+  "independent_agents": [
+    {"agent_id": "69ae8a9402d449101273a2d3", "name": "Outreach Email Agent"},
+    {"agent_id": "69ae8aaa27c3c93e13e20786", "name": "Email Delivery Agent", "tools": ["GMAIL_SEND_EMAIL"]},
+    {"agent_id": "69ae8a95fee5a76ed56614b9", "name": "Survey Analysis Agent"},
+    {"agent_id": "69ae8a9501d1193bde72d0ef", "name": "Follow-up Agent"},
+    {"agent_id": "69ae8aab27c3c93e13e20788", "name": "Follow-up Delivery Agent", "tools": ["GMAIL_SEND_EMAIL"]}
+  ],
+  "response_schemas": [
+    "response_schemas/company_research_agent_response.json",
+    "response_schemas/icp_qualification_agent_response.json",
+    "response_schemas/opportunity_analysis_agent_response.json",
+    "response_schemas/decision_maker_discovery_agent_response.json",
+    "response_schemas/sales_intelligence_manager_response.json",
+    "response_schemas/outreach_email_agent_response.json",
+    "response_schemas/email_delivery_agent_response.json",
+    "response_schemas/survey_analysis_agent_response.json",
+    "response_schemas/follow_up_agent_response.json",
+    "response_schemas/follow_up_delivery_agent_response.json"
+  ]
+}

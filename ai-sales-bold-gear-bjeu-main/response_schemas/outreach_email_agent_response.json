@@ -1,0 +1,34 @@
+{
+  "agent_name": "Outreach Email Agent",
+  "agent_id": "69ae8a9402d449101273a2d3",
+  "description": "Generates personalized outreach emails referencing company initiatives, industry insights, and relevant Pronix use cases",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "emails": [
+      {
+        "recipient_name": "string",
+        "recipient_title": "string",
+        "recipient_email": "string",
+        "subject": "string",
+        "body": "string",
+        "survey_link": "string",
+        "calendar_link": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "emails": [
+      {
+        "recipient_name": "sample string",
+        "recipient_title": "sample string",
+        "recipient_email": "sample string",
+        "subject": "sample string",
+        "body": "sample string",
+        "survey_link": "sample string",
+        "calendar_link": "sample string"
+      }
+    ]
+  }
+}

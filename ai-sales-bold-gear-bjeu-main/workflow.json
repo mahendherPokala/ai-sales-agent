@@ -1,0 +1,121 @@
+{
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "Company Research Input", "nodeCategory": "input"},
+      {"id": "sales_intelligence_manager", "type": "Agent", "label": "Sales Intelligence Manager", "nodeCategory": "agent"},
+      {"id": "company_research_agent", "type": "Agent", "label": "Company Research Agent", "nodeCategory": "agent"},
+      {"id": "icp_qualification_agent", "type": "Agent", "label": "ICP Qualification Agent", "nodeCategory": "agent"},
+      {"id": "opportunity_analysis_agent", "type": "Agent", "label": "Opportunity Analysis Agent", "nodeCategory": "agent"},
+      {"id": "decision_maker_agent", "type": "Agent", "label": "Decision Maker Discovery Agent", "nodeCategory": "agent"},
+      {"id": "outreach_email_agent", "type": "Agent", "label": "Outreach Email Agent", "nodeCategory": "agent"},
+      {"id": "email_delivery_agent", "type": "Agent", "label": "Email Delivery Agent", "nodeCategory": "agent"},
+      {"id": "survey_analysis_agent", "type": "Agent", "label": "Survey Analysis Agent", "nodeCategory": "agent"},
+      {"id": "follow_up_agent", "type": "Agent", "label": "Follow-up Agent", "nodeCategory": "agent"},
+      {"id": "follow_up_delivery_agent", "type": "Agent", "label": "Follow-up Delivery Agent", "nodeCategory": "agent"},
+      {"id": "output_node", "type": "Output", "label": "Output", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "sales_intelligence_manager"},
+      {"source": "sales_intelligence_manager", "target": "company_research_agent"},
+      {"source": "sales_intelligence_manager", "target": "icp_qualification_agent"},
+      {"source": "sales_intelligence_manager", "target": "opportunity_analysis_agent"},
+      {"source": "sales_intelligence_manager", "target": "decision_maker_agent"},
+      {"source": "sales_intelligence_manager", "target": "outreach_email_agent"},
+      {"source": "outreach_email_agent", "target": "email_delivery_agent"},
+      {"source": "email_delivery_agent", "target": "survey_analysis_agent"},
+      {"source": "survey_analysis_agent", "target": "follow_up_agent"},
+      {"source": "follow_up_agent", "target": "follow_up_delivery_agent"},
+      {"source": "follow_up_delivery_agent", "target": "output_node"}
+    ]
+  },
+  "agents": {
+    "sales_intelligence_manager": {
+      "agent_id": "69ae8a5e02d449101273a2d1",
+      "name": "Sales Intelligence Manager",
+      "type": "manager",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "managed_agents": [
+        "69ae8a43bd885a29b1d7d94d",
+        "69ae8a440e02fcb17f72e903",
+        "69ae8a4485d98e0bc2ef2eb5",
+        "69ae8a440e02fcb17f72e905"
+      ]
+    },
+    "company_research_agent": {
+      "agent_id": "69ae8a43bd885a29b1d7d94d",
+      "name": "Company Research Agent",
+      "type": "sub-agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2
+    },
+    "icp_qualification_agent": {
+      "agent_id": "69ae8a440e02fcb17f72e903",
+      "name": "ICP Qualification Agent",
+      "type": "sub-agent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.3
+    },
+    "opportunity_analysis_agent": {
+      "agent_id": "69ae8a4485d98e0bc2ef2eb5",
+      "name": "Opportunity Analysis Agent",
+      "type": "sub-agent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.4
+    },
+    "decision_maker_agent": {
+      "agent_id": "69ae8a440e02fcb17f72e905",
+      "name": "Decision Maker Discovery Agent",
+      "type": "sub-agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2
+    },
+    "outreach_email_agent": {
+      "agent_id": "69ae8a9402d449101273a2d3",
+      "name": "Outreach Email Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.7
+    },
+    "email_delivery_agent": {
+      "agent_id": "69ae8aaa27c3c93e13e20786",
+      "name": "Email Delivery Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.2,
+      "tools": ["GMAIL_SEND_EMAIL"]
+    },
+    "survey_analysis_agent": {
+      "agent_id": "69ae8a95fee5a76ed56614b9",
+      "name": "Survey Analysis Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.3
+    },
+    "follow_up_agent": {
+      "agent_id": "69ae8a9501d1193bde72d0ef",
+      "name": "Follow-up Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.6
+    },
+    "follow_up_delivery_agent": {
+      "agent_id": "69ae8aab27c3c93e13e20788",
+      "name": "Follow-up Delivery Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.2,
+      "tools": ["GMAIL_SEND_EMAIL"]
+    }
+  }
+}

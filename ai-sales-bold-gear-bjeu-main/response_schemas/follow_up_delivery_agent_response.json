@@ -1,0 +1,20 @@
+{
+  "agent_name": "Follow-up Delivery Agent",
+  "agent_id": "69ae8aab27c3c93e13e20788",
+  "description": "Sends approved follow-up emails via Gmail after SDR review",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "recipient_email": "string",
+    "recipient_name": "string",
+    "status": "string",
+    "message": "string"
+  },
+  "example_response": {
+    "recipient_email": "sample string",
+    "recipient_name": "sample string",
+    "status": "sample string",
+    "message": "sample string"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "agent_name": "Follow-up Agent",
+  "agent_id": "69ae8a9501d1193bde72d0ef",
+  "description": "Generates contextual follow-up emails based on survey analysis",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "recipient_name": "string",
+    "recipient_title": "string",
+    "recipient_email": "string",
+    "subject": "string",
+    "body": "string",
+    "calendar_link": "string",
+    "follow_up_strategy": "string",
+    "key_talking_points": [
+      "string"
+    ]
+  },
+  "example_response": {
+    "recipient_name": "sample string",
+    "recipient_title": "sample string",
+    "recipient_email": "sample string",
+    "subject": "sample string",
+    "body": "sample string",
+    "calendar_link": "sample string",
+    "follow_up_strategy": "sample string",
+    "key_talking_points": [
+      "sample string"
+    ]
+  }
+}

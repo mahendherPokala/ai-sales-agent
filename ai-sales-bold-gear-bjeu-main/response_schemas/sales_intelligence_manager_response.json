@@ -1,0 +1,122 @@
+{
+  "agent_name": "Sales Intelligence Manager",
+  "agent_id": "69ae8a5e02d449101273a2d1",
+  "description": "Coordinates research, qualification, opportunity analysis, and decision-maker discovery sub-agents; aggregates all outputs into a unified intelligence report",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "company_profile": {
+      "company_name": "string",
+      "website": "string",
+      "industry": "string",
+      "company_size": "string",
+      "revenue_estimate": "string",
+      "headquarters": "string",
+      "founded": "string",
+      "description": "string",
+      "strategic_initiatives": [
+        "string"
+      ],
+      "technology_stack": [
+        "string"
+      ],
+      "ai_adoption_indicators": [
+        "string"
+      ],
+      "recent_news": [
+        "string"
+      ],
+      "challenges_pain_points": [
+        "string"
+      ]
+    },
+    "icp_qualification": {
+      "icp_score": "number",
+      "qualification_category": "string",
+      "scoring_reasoning": "string",
+      "fit_factors": [
+        "string"
+      ],
+      "risk_factors": [
+        "string"
+      ]
+    },
+    "opportunities": [
+      {
+        "service_name": "string",
+        "business_impact": "string",
+        "match_reasoning": "string",
+        "priority": "string"
+      }
+    ],
+    "decision_makers": [
+      {
+        "name": "string",
+        "title": "string",
+        "department": "string",
+        "linkedin_url": "string",
+        "influence_level": "string",
+        "relevance_notes": "string"
+      }
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "company_profile": {
+      "company_name": "sample string",
+      "website": "sample string",
+      "industry": "sample string",
+      "company_size": "sample string",
+      "revenue_estimate": "sample string",
+      "headquarters": "sample string",
+      "founded": "sample string",
+      "description": "sample string",
+      "strategic_initiatives": [
+        "sample string"
+      ],
+      "technology_stack": [
+        "sample string"
+      ],
+      "ai_adoption_indicators": [
+        "sample string"
+      ],
+      "recent_news": [
+        "sample string"
+      ],
+      "challenges_pain_points": [
+        "sample string"
+      ]
+    },
+    "icp_qualification": {
+      "icp_score": 0,
+      "qualification_category": "sample string",
+      "scoring_reasoning": "sample string",
+      "fit_factors": [
+        "sample string"
+      ],
+      "risk_factors": [
+        "sample string"
+      ]
+    },
+    "opportunities": [
+      {
+        "service_name": "sample string",
+        "business_impact": "sample string",
+        "match_reasoning": "sample string",
+        "priority": "sample string"
+      }
+    ],
+    "decision_makers": [
+      {
+        "name": "sample string",
+        "title": "sample string",
+        "department": "sample string",
+        "linkedin_url": "sample string",
+        "influence_level": "sample string",
+        "relevance_notes": "sample string"
+      }
+    ],
+    "summary": "sample string"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "agent_name": "Survey Analysis Agent",
+  "agent_id": "69ae8a95fee5a76ed56614b9",
+  "description": "Analyzes enterprise survey responses to determine AI readiness, project urgency, data availability, and budget signals",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "ai_readiness_score": "number",
+    "readiness_category": "string",
+    "project_urgency": "string",
+    "data_availability": "string",
+    "budget_signals": "string",
+    "key_insights": [
+      "string"
+    ],
+    "recommended_next_steps": [
+      "string"
+    ],
+    "detailed_analysis": "string"
+  },
+  "example_response": {
+    "ai_readiness_score": 0,
+    "readiness_category": "sample string",
+    "project_urgency": "sample string",
+    "data_availability": "sample string",
+    "budget_signals": "sample string",
+    "key_insights": [
+      "sample string"
+    ],
+    "recommended_next_steps": [
+      "sample string"
+    ],
+    "detailed_analysis": "sample string"
+  }
+}

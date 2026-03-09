@@ -1,0 +1,28 @@
+{
+  "agent_name": "Email Delivery Agent",
+  "agent_id": "69ae8aaa27c3c93e13e20786",
+  "description": "Sends approved personalized outreach emails to selected decision makers via Gmail",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "delivery_results": [
+      {
+        "recipient_email": "string",
+        "recipient_name": "string",
+        "status": "string",
+        "message": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "delivery_results": [
+      {
+        "recipient_email": "sample string",
+        "recipient_name": "sample string",
+        "status": "sample string",
+        "message": "sample string"
+      }
+    ]
+  }
+}
